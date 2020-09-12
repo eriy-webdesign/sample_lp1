@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* =====================基本設計===================== */
+body{
+	margin: 0;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	line-height:2;
+	font-size:18px;
+	color: #333333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a:link { color: #333333;
+	text-decoration: none;
+ 	}
+
+a:visited { color: #333333; }
+
+a:hover { color: #cccccc; }
+
+a:active { color: #cccccc; }
+
+img{
+	vertical-align: bottom;
+	max-width: 100%;
+	height: auto;
+}
+
+/* =====================メインコンテンツ===================== */
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+	box-shadow: 4px 0px 3px -3px #ccc, -4px 0 3px -3px #ccc;
+}
+
+.button {
+	width: 530px;
+	height: 80px;
+	font-size: 30px;
+	text-align: center;
+  border-bottom: 0.1em solid #7d4a0d;
+  background-color: #ec9123;
+  color: #fff;
+	border-radius: 10px;
+	padding: 10px 0px;
+	margin: 20px auto 50px auto;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.button:hover {
+  border-bottom-color: transparent;
+  transform: translateY(0.1875em);
+}
+
+.button a {
+	color: #fff;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+@media (max-width:767px) {
+	.button {
+		width: 265px;
+		height: 40px;
+		font-size: 16px;
+		text-align: center;
+	  border-bottom: 0.1em solid #7d4a0d;
+	  background-color: #ec9123;
+	  color: #fff;
+		border-radius: 10px;
+		padding: 3px 0px;
+		margin: 10px auto 30px auto;
+	  cursor: pointer;
+	  transition: all 0.3s ease 0s;
+	}
+	.button:hover {
+	  border-bottom-color: transparent;
+	  transform: translateY(0.1875em);
+	}
+
+	.button a {
+		color: #fff;
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}
+
+#scroll-btn{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: #b19b6a;
+	color: #fff;
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+
+#scroll-btn i {
+	font-size: 50px;
+	line-height: 70px;
+}
+
+@media (max-width: 767px) {
+	.footer-inner{
+		width: 100%;
+	}
+	.footer-inner small{
+		font-size: 12px;
+	}
+
+	#scroll-btn{
+		width: 50px;
+		height: 50px;
+	}
+
+	#scroll-btn i {
+		font-size: 30px;
+		line-height: 50px;
+	}
+}
